@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Convite para Degustação</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  /* Gradiente rosado mais forte */
+  background: linear-gradient(135deg, #ffcade 0%, #ffb6cb 100%);
+  
+  /* Padrão floral rosado */
+  background-image: url('https://www.transparenttextures.com/patterns/pink-floral.png');
+  background-repeat: repeat;
+  background-size: 250px 250px;
+}
+
+.convite {
+  width: 90%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  background-image: url("imagem_convite.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+
+  /* Sombra rosa mais viva */
+  box-shadow: 0 0 50px rgba(255, 105, 180, 0.5), 0 0 15px rgba(0,0,0,0.07);
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  .convite {
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.4), 0 0 8px rgba(0,0,0,0.05);
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="convite">
+  </div>
+</body>
+</html>
